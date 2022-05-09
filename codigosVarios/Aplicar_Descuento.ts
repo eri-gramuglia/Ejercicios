@@ -5,19 +5,15 @@ let descuento: number = 0;
 let montoConDescuento: number = 0;
 let montoCompra: number = 0;
 
+let mes: number = Number(prompt("ingrese el mes de la compra en número"));
+
 montoCompra = cantProducto * precioProducto;
-descuento = montoCompra * 0.10;
+descuento = montoCompra * 0.15;
 montoConDescuento = montoCompra - descuento;
 
-if (montoCompra >=1000) { 
-  montoConDescuento= (montoCompra * descuento);
-  console.log ("Por realizar una compra mayor de $1000 tiene un 10% de descuento")
-  console.log ("el monto a pagar es el siguiente:" + montodescuento);
-else 
-
-}
-  
-  console.log("por comprar en el mes de octubre, la compra tiene un 15% de descuento"
+if (mes == 10) {
+  console.log(
+    "por comprar en el mes de octubre, la compra tiene un 15% de descuento"
   );
   console.log("el monto con descuento a pagar es ", montoConDescuento);
 } else {
