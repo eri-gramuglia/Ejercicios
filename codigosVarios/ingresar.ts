@@ -1,9 +1,10 @@
-let btnEnv = document.getElementById ("btnEnviar");
-let dato = document.getElementById ("dato");
-let rotulo = document.getElementById ("rotulo");
+let alturaPermitida: number = 130;
+let alturaPersona: number = Number(
+  prompt("Ingresar la altura de la persona en centimetros")
+);
 
-rotulo.innerHTML = "Indique la altura de la persona:", dato.value;
-
-btnEnv.addEventListener ("click"), () =>  {
-console.log ("la altura es:" , dato.value);
-}),
+if (alturaPersona >= alturaPermitida) {
+  console.log("la persona puede ingresar a la montaña rusa");
+} else {
+  console.log("ALTURA INVALIDA");
+}
