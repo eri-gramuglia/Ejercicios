@@ -12,14 +12,15 @@ montoConDescuento = montoCompra - descuento;
 if (montoCompra >=1000) { 
   montoConDescuento= (montoCompra * descuento);
   console.log ("Por realizar una compra mayor de $1000 tiene un 10% de descuento")
-  console.log ("el monto a pagar es el siguiente:" + montodescuento);
-else 
+  console.log ("el monto a pagar es el siguiente:" + montoConDescuento);
+else {
 
-}
+
   
   console.log("por comprar en el mes de octubre, la compra tiene un 15% de descuento"
   );
   console.log("el monto con descuento a pagar es ", montoConDescuento);
 } else {
   console.log("la compra no tiene descuento");
+}
 }
