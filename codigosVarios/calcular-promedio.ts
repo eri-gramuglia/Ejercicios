@@ -1,4 +1,6 @@
-let nota, suma, promedio: number;
+let nota: number;
+let suma: number = 0;
+let promedio: number;
 suma = 0;
 for (let contador: number = 1; contador < 11; contador++) {
   nota = Number(prompt("Ingrese la nota número " + contador));

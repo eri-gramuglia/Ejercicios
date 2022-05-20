@@ -9,7 +9,10 @@ if (num1 >= num2) {
   for (entreNum = num1; entreNum <= num2; entreNum++) {
     suma = suma + entreNum;
   }
-  console.log("El resultado de la suma es: ", suma);
+  console.log(
+    "El resultado de la suma entre los números ingresados es: ",
+    suma
+  );
 }
 
 //if (num1 >= num2) {
