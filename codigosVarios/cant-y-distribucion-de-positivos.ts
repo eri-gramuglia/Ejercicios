@@ -1,14 +1,16 @@
 let cantTotal: number = 0;
 let cantPositivos: number = 0;
 let porcPositivos: number = 0;
+let num: number = Number(
+  prompt("Ingresar número, Ingresar un cero para cortar ciclo.")
+);
 
-let num = Number(prompt("Ingresar número"));
 while (num !== 0) {
   if (num > 0) {
     cantPositivos++;
   }
   cantTotal++;
-  num = Number(promp("Ingresar número"));
+  num = Number(prompt("Ingresar número, Ingresar un cero para cortar ciclo."));
 }
 if (cantTotal > 0) {
   porcPositivos = (cantPositivos * 100) / cantTotal;

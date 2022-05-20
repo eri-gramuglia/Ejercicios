@@ -1,10 +1,9 @@
-let min, max,sum,avg,cont:number;
-let num=Number (prompt("Ingrese un número"));
-let cont=0;
-let sum=0;
-let avg=0;
-let min=num;
-let max=num;
+let num: number =Number (prompt("Ingrese un número"));
+let cont: number =0;
+let sum: number=0;
+let media: number=0;
+let min: number=num;
+let max: number=num;
 
 while (num!==0){
   if (num<min){
@@ -15,13 +14,13 @@ while (num!==0){
   }
   sum+=num;
   cont++;
-  let num=Number (prompt("Ingrese un número"));
+  num=Number (prompt("Ingrese un número"));
 }
 if (cont>0){
-  avg=sum/cont;
-  console.log ("El número es: min");
-  console.log ("El número es: max");
-  console.log ("El número es: avg");
+  media=sum/cont;
+  console.log ("El número mínimo es:", min);
+  console.log ("El número máximo es:", max);
+  console.log ("El promedio entre los números ingresado es:", media);
 }
 else {
   console.log ("No ingresó ningún número");
