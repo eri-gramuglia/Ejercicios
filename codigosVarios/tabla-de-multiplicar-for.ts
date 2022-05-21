@@ -5,11 +5,10 @@ let multiplicando: number = Number(
   prompt("Ingresar hasta qué número quiere multiplicar")
 );
 
-let contador: number = 0;
+let contador: number;
 let resultado: number;
 
-for (let contador: number = 0; contador <= multiplicando; contador++);
-{
+for (contador = 0, contador <= multiplicando, contador++) {
   resultado = multiplicador * contador;
   console.log(multiplicador, "x", contador, "=", resultado);
 }

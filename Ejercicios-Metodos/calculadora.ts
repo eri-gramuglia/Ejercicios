@@ -1,23 +1,32 @@
-let operador1: number = Number(prompt("Ingrese el primer número:")); //document.getElementById("dato1");
-let operador2: number = Number(prompt("Ingrese el segundo número:")); //document.getElementById("dato2");
+let operador1 = Number(prompt("Ingrese el primer número:"));
+let operador2 = Number(prompt("Ingrese el segundo número:"));
+let opcionMenu = Number(prompt("Ingrese 1 para sumar o 2 para restar:"));
+
 function guiones() {
   //declarando la funcion
   let guion = "";
-  for (let i = 0; i <= 40; i++) guion = guion + "-";
-
+  for (let i = 0; i <= 50; i++) guion = guion + "-";
   console.log(guion);
 }
+function calcularResultado(
+  operador1: number,
+  operador2: number,
+  opcionMenu: number
+): number {
+  //declarando la funcion
+  let resultado: number = 0;
+  if (opcionMenu === 1) {
+    resultado = operador1 + operador2;
+  } else if (opcionMenu === 2) {
+    resultado = operador1 - operador2;
+  }
+  return resultado;
+}
 
-//btnDatos1.addEventListener("click", () => {
 console.log("Operador 1: " + operador1);
-//});
-
-//btnDatos2.addEventListener("click", () => {
 console.log("Operador 2: " + operador2);
-//});
 
-//sumar.addEventListener("click", () => {
+let resultado = calcularResultado(operador1, operador2, opcionMenu);
 guiones(); //llamando la funcion
-let suma: number = Number(operador1) + Number(operador2);
-console.log("El resultado es: ", suma);
+console.log("El resultado de la operacion es: ", resultado); //imprime el resultado que devuelve la funcion
 guiones(); //llamando la función
