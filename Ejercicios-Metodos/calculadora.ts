@@ -19,5 +19,5 @@ console.log("Operador 2: " + operador2);
 //sumar.addEventListener("click", () => {
 guiones(); //llamando la funcion
 let suma: number = Number(operador1) + Number(operador2);
-console.log("El resultado es: " + suma);
+console.log("El resultado es: ", suma);
 guiones(); //llamando la función
