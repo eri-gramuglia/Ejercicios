@@ -3,7 +3,7 @@ let numero: number;
 let indice: number;
 for (indice = 0; indice < 5; indice++) {
   numero = Number(
-    prompt(`Ingrese el número que desea incorporar en la posición:, ${indice}:`)
+    prompt(`Ingrese el número que desea incorporar en la posición: ${indice}:`)
   );
   numeroDeseadoArreglo[indice] = numero;
 }

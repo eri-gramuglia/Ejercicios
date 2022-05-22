@@ -3,7 +3,7 @@ let nombrePersonas: string[] = new Array(lenghtArreglo);
 let index: number;
 for (index = 0; index < 5; index++) {
   nombrePersonas[index] = prompt(
-    `Ingrese el nombre de la persona en la posición:, ${index}:`
+    `Ingrese el nombre de la persona en la posición: ${index}:`
   );
 }
 for (index = 0; index < lenghtArreglo; index++) {
