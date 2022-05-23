@@ -18,13 +18,14 @@ for (indexA = 0; indexA < lenghtArray; indexA++) {
 for (indexA = 0; indexA < lenghtArray; indexA++) {
   //muestra los números ingresados en el Array.
   console.log(
-    `El número "${numberArray[indexA]}" se ingresó en la posición "${indexA}"`
+    `En la posición "${indexA} se ingresó El número "${numberArray[indexA]}"`
   );
 }
 guionesx20();
+let longArray: number = lenghtArray - 1;
 console.log("Muestra los números del arreglo en forma invertida");
-for (indexA = lenghtArray; 0! < indexA; indexA--) {
+for (indexA = longArray; 0 <= indexA; indexA--) {
   console.log(
-    `El número "${numberArray[indexA]}" Se ingresó en la posición "${indexA}"`
+    `En la posición "${indexA} se ingresó El número "${numberArray[indexA]}"`
   );
 }
