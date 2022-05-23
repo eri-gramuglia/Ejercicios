@@ -1,7 +1,6 @@
 let lenghtArray: number = Number(prompt(`Ingrese la longitud del arreglo:`));
 let numberArray: number[] = new Array(lenghtArray);
 let indexA: number;
-let indexInv: number;
 
 function guionesx20() {
   let guion: string = "-";
@@ -24,8 +23,8 @@ for (indexA = 0; indexA < lenghtArray; indexA++) {
 }
 guionesx20();
 console.log("Muestra los números del arreglo en forma invertida");
-for (indexInv = 0; indexInv < indexA; indexInv++) {
+for (indexA = lenghtArray; 0! < indexA; indexA--) {
   console.log(
-    `El número "${numberArray[indexInv]}" Se ingresó en la posición "${indexInv}"`
+    `El número "${numberArray[indexA]}" Se ingresó en la posición "${indexA}"`
   );
 }
