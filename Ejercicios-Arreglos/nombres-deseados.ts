@@ -1,7 +1,7 @@
 let lenghtArreglo: number = Number(prompt(`Ingrese la longitud del arreglo:`));
 let nombrePersonas: string[] = new Array(lenghtArreglo);
 let index: number;
-for (index = 0; index < 5; index++) {
+for (index = 0; index < lenghtArreglo; index++) {
   nombrePersonas[index] = prompt(
     `Ingrese el nombre de la persona en la posición: ${index}:`
   );

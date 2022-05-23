@@ -7,7 +7,7 @@ function Azar(tope: number): number {
 }
 
 for (index = 0; index < 10; index++) {
-  numeroAleatorio[index] = Azar(100); //llamado de la funcio de números aleatorios.
+  numeroAleatorio[index] = Azar(100); //llamado de la función de números aleatorios.
 }
 for (index = 0; index < 10; index++) {
   console.log(`El número en la posición ${index} es ${numeroAleatorio[index]}`);
