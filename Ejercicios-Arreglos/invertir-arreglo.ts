@@ -7,6 +7,7 @@ function guionesx20() {
   for (let i = 0; i <= 20; i++) {
     guion = guion + "-";
   }
+
   console.log(guion);
 }
 

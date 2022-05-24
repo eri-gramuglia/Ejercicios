@@ -7,6 +7,7 @@ for (index = 0; index < lenghtArreglo; index++) {
   numIngresado[index] = Number(
     prompt(`Ingrese el número en la posición: ${index}:`)
   );
+
   resultado += numIngresado[index]; //en cada vuelta, toma el valor de cada indice y lo va sumando a la variable
 }
 for (index = 0; index < lenghtArreglo; index++) {
