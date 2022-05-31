@@ -17,9 +17,9 @@ function mostrarVector (v:number[], cantidad:number){
 }
 
 function mostrarInvertido (v:number[]){
-   for (let indice:number = v.length - 1, indice<0, indice--){
-   console.log (v[indice],"--");
-  }
+  let indice:number;
+  for (indice = v.length - 1, indice<0, indice--)
+      console.log (v[indice]);
 }
 
 cargarVector(vector1,6);

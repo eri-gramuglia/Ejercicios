@@ -21,10 +21,26 @@ function mostrarVector(vector: number[]) {
 
 function mostrarVectorInvertido(vector: number[]) {
   for (let indice: number = vector.length - 1; (indice) => 0; indice--) {
-    console.log(numberArray[indice], "--");
+    console.log(vector[indice]);
   }
-}
 
-cargarVector(numberArray, lenghtArray);
-mostrarVector(numberArray, lenghtArray);
+
+function invertirVector (vector:number [], cantidad:number){
+  let vectorInvertido:number[] = new Array(cantidad);
+  let indice:number=0;
+  for (let indiceInvertido:number = cantidad - 1; indiceInvertido => 0; indiceInvertido--) {
+    vectorInvertido[indice]=vector[indiceInvertido];
+    indice
+  
+  
+   
+   
+    }
+    
+  
+  
+
+cargarVector(numberArray);
+mostrarVector(numberArray);
 mostrarVectorInvertido(numberArray);
+invertirVector(numberArray);
