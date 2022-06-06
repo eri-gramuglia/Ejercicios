@@ -33,14 +33,16 @@ function multiplicarArreglo1(
     v3[indice] = v1[indice] * v2[indice];
 }
 
-cargarArray(vector1, dimensionVector);
-console.log("Datos primer vector:", vector1);
-cargarArray(vector2, dimensionVector);
-console.log("Datos segundo vector:", vector2);
-multiplicarArreglo1(vector1, vector2, vectorResultado, dimensionVector);
-console.log(
-  "La multiplicación de los dos vectores anteriores es:",
-  vectorResultado
-);
-multiplicarArreglo(v1, v2, v3, v4, vResultado, dimensionVector);
+//cargarArray(vector1, dimensionVector);
+//console.log("Datos primer vector:", vector1);
+//cargarArray(vector2, dimensionVector);
+//console.log("Datos segundo vector:", vector2);
+//multiplicarArreglo1(vector1, vector2, vectorResultado, dimensionVector);
+//console.log("La multiplicación de los dos vectores anteriores es:",vectorResultado);
+//multiplicarArreglo(v1, v2, v3, v4, vResultado, dimensionVector);
+//console.log("La multiplicación de los vectores precargados es:", vResultado);
+
+multiplicarArreglo1(v1, v2, vResultado, dimensionVector);
+multiplicarArreglo1(vResultado, v3, vResultado, dimensionVector);
+multiplicarArreglo1(vResultado, v4, vResultado, dimensionVector);
 console.log("La multiplicación de los vectores precargados es:", vResultado);
